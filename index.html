@@ -9,6 +9,7 @@
 	<title>Webnikah - Buat Websites Undangan Pernikahan Gratis</title>
 	<link rel="shorcut icon" href="images/logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<img target="_blank" src="images/nikah.jpg" alt="Nikah" hidden="hidden">
 
     <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -23,7 +24,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	
+	<link rel="stylesheet" href="css/all.css">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -52,27 +53,33 @@
 	<body>
     <!--__ Start Navbar -->
 	<div class="fh5co-loader"></div
-	<div id="page">
+	<div id="page"></div>
+	<nav class="fh5co-top">
+		<div class="container">
+			<div class="col-xs-2">
+				<div id="fh5co-logo"><a href="index.html"><h1 style="color: white;  font-family: 'Sacramento', Arial, serif;"><strong>Wedding</strong></h1></a></div>
+			</div>
+		</div>	
+	</nav>
+	
+
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
-				</div>
-				<div class="col-xs-10 text-right menu-1">
+				<div class="col-xs-10 text-right menu-1 hidden-xs">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#mempelai" data-page="mempelai">MEMPELAI</a></li>
-						<li><a href="#undangan" data-page="undangan">UNDANGAN</a></li>
-						<li><a href="#cerita" data-page="cerita">CERITA CINTA</a></li>
-						<li><a href="#poto" data-page="poto">PHOTO GALERI</a></li>
-						<li><a href="#ucapan" data-page="ucapan">DO'A DAN UCAPAN</a></li>
-						<li><a href="#map" data-page="map">TEMPAT</a></li>
-						<li><a href="#kado" data-page="kado">KADO</a></li>
+						<li class="active"><a href="index.html"><i class="fa-solid icon-home"> HOME</i></a></li>
+						<li><a href="#mempelai" data-page="mempelai"><i class="fa-solid icon-users" > MEMPELAI</i></a></li>
+						<li><a href="#undangan" data-page="undangan"><i class="fa-solid icon-message"> UNDANGAN</i></a></li>
+						<li><a href="#cerita" data-page="cerita"><i class="fa-solid icon-new-message"> CERITA</i></a></li>
+						<li><a href="#poto" data-page="poto"><i class="fa-solid icon-image"> GALERI</i></a></li>
+						<li><a href="#video" data-page="video"><i class="fa-solid icon-video"> VIDEO</i></a></li>
+						<li><a href="#ucapan" data-page="ucapan"><i class="fa-solid icon-message"> UCAPAN</i></a></li>
+						<li><a href="#map" data-page="map"><i class="fa-solid icon-map"> TEMPAT</i></a></li>
+						<li><a href="#kado" data-page="kado"><i class="fa-solid icon-box"> KADO</i></a></li>
 					</ul>
 				</div>
 			</div>
-			
 		</div>
 	</nav>
 	<!-- End Navbar -->
@@ -88,8 +95,8 @@
 							<h1>Alif &amp; Megumi</h1>
 							<h2>Akan Segera Melangsungkan Pernikahan pada</h2>
 							<h3>Minggu, 10 September 2023</h3>
-							<p style="display: flex; justify-content: center; align-content: center; height: 150px; font-size: 38px; text-align: center; color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif;" id="demo"></p>
-							<p><a href="#" class="btn btn-default btn-sm">Buka Undangan</a></p>
+							<div class="simply-countdown simply-countdown-one"></div>
+							<p><a href="#mempelai" class="link btn btn-default btn-sm blink" data-page="mempelai">Buka Undangan</a></p>
 						</div>
 					</div>
 				</div>
@@ -275,6 +282,26 @@
 	</div>
 	<!-- End Galeri -->
 
+	<!-- Start Videos -->
+	<div id="video"></div>
+	<div id="fh5co-gallery" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Kenangan Kami</span>
+					<h2>Moment Video</h2>
+					<p>Inilah moment kenangan kami dalam bentuk Video.</p>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-12">
+					<div class="videoWrapper"><iframe src="https://youtu.be/hE-1XnJs61w"frameborder="0" allowfullscreen class="video"></iframe></div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Videos-->
+
 		<!-- Start Do'a dan Ucapan -->
 		<div id="ucapan"></div>
 		<div id="fh5co-testimonial">
@@ -353,14 +380,13 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
 					<ul id="fh5co-gallery-list">
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/mandiri.png); "> 
-                            <a href="https://bankmandiri.co.id/"></a>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/bri.png); width: 512px; ">
+							<a href="https://bri.co.id/" class="color-2"></a><br>
+							<h4>Nomor Rek : 067535678452327</h4>
 						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/bri.png) ">
-							<a href="https://bri.co.id/" class="color-2"></a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/bca.png)">
-							<a href="https://www.bca.co.id/id/Individu" class="color-3"></a>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/bca.png); width: 512px;">
+							<a href="https://www.bca.co.id/id/Individu" class="color-3"></a><br>
+							<h4>Nomor Rek : 021345264352267</h4>
 						</li>
 					</ul>		
 				</div>
@@ -424,7 +450,7 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"> </script>
 	<script>
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
